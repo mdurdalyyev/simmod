@@ -1,0 +1,111 @@
+<h1 id="информация">Информация</h1>
+<h2 id="докладчик">Докладчик</h2>
+<p>:::::::::::::: {.columns align=center} ::: {.column width=&quot;60%&quot;}</p>
+<ul>
+<li>Дурдалыев Максат</li>
+<li>студент</li>
+<li>Российский университет дружбы народов</li>
+<li><a href="mailto:1032205337@pfur.ru">1032205337@pfur.ru</a></li>
+<li><a href="https://mdurdalyyev.github.io/ru/" class="uri">https://mdurdalyyev.github.io/ru/</a></li>
+</ul>
+<p>::: ::: {.column width=&quot;25%&quot;}</p>
+<div class="figure">
+<img src="./image/durdalyyev.jpg" />
+
+</div>
+<p>::: ::::::::::::::</p>
+<h2 id="цель-работы">Цель работы</h2>
+<p>Реализовать модель &quot;хищник-жертва&quot; в <em>xcos</em>.</p>
+<h2 id="задание">Задание</h2>
+<ol style="list-style-type: decimal">
+<li>Реализовать модель &quot;хищник-жертва&quot; в xcos;</li>
+<li>Реализовать модель &quot;хищник-жертва&quot; с помощью блока Modelica в xcos;</li>
+<li>Реализовать модель &quot;хищник-жертва&quot; в OpenModelica</li>
+</ol>
+<h2 id="выполнение-лабораторной-работы">Выполнение лабораторной работы</h2>
+<p><br /><span class="math display">$$
+\begin{cases}
+  \dot x = ax - bxy \\
+  \dot y = cxy - dy,
+\end{cases}
+$$</span><br /></p>
+<p>где <span class="math inline"><em>x</em></span> — количество жертв; <span class="math inline"><em>y</em></span> — количество хищников; <span class="math inline"><em>a</em>, <em>b</em>, <em>c</em>, <em>d</em></span> — коэффициенты, отражающие взаимодействия между видами.</p>
+<h2 id="реализация-модели-в-xcos">Реализация модели в xcos</h2>
+<div class="figure">
+<img src="image/1.png" alt="Задание переменных окружения в xcos для модели" id="fig:001" style="width:70.0%" />
+<p class="caption">Задание переменных окружения в xcos для модели</p>
+</div>
+<h2 id="реализация-модели-в-xcos-1">Реализация модели в xcos</h2>
+<div class="figure">
+<img src="image/2.png" alt="Модель «хищник–жертва» в xcos" id="fig:002" style="width:70.0%" />
+<p class="caption">Модель «хищник–жертва» в xcos</p>
+</div>
+<h2 id="реализация-модели-в-xcos-2">Реализация модели в xcos</h2>
+<div class="figure">
+<img src="image/3.png" alt="Задание начальных значений в блоках интегрирования" id="fig:003" style="width:70.0%" />
+<p class="caption">Задание начальных значений в блоках интегрирования</p>
+</div>
+<h2 id="реализация-модели-в-xcos-3">Реализация модели в xcos</h2>
+<div class="figure">
+<img src="image/4.png" alt="Задание параметров моделирования" id="fig:004" style="width:70.0%" />
+<p class="caption">Задание параметров моделирования</p>
+</div>
+<h2 id="реализация-модели-в-xcos-4">Реализация модели в xcos</h2>
+<div class="figure">
+<img src="image/5.png" alt="Динамика изменения численности хищников и жертв модели Лотки-Вольтерры при a = 2, b = 1, c = 0.3, d = 1, x(0) = 2, y(0) = 1" id="fig:005" style="width:50.0%" />
+<p class="caption">Динамика изменения численности хищников и жертв модели Лотки-Вольтерры при <span class="math inline"><em>a</em> = 2, <em>b</em> = 1, <em>c</em> = 0.3, <em>d</em> = 1, <em>x</em>(0)=2, <em>y</em>(0)=1</span></p>
+</div>
+<h2 id="реализация-модели-в-xcos-5">Реализация модели в xcos</h2>
+<div class="figure">
+<img src="image/6.png" alt="Фазовый портрет модели Лотки-Вольтерры при a = 2, b = 1, c = 0.3, d = 1, x(0) = 2, y(0) = 1" id="fig:006" style="width:50.0%" />
+<p class="caption">Фазовый портрет модели Лотки-Вольтерры при <span class="math inline"><em>a</em> = 2, <em>b</em> = 1, <em>c</em> = 0.3, <em>d</em> = 1, <em>x</em>(0)=2, <em>y</em>(0)=1</span></p>
+</div>
+<h2 id="реализация-модели-с-помощью-блока-modelica-в-xcos">Реализация модели с помощью блока Modelica в xcos</h2>
+<div class="figure">
+<img src="image/7.png" alt="Модель «хищник–жертва» в xcos с применением блока Modelica" id="fig:007" style="width:55.0%" />
+<p class="caption">Модель «хищник–жертва» в xcos с применением блока Modelica</p>
+</div>
+<h2 id="реализация-модели-с-помощью-блока-modelica-в-xcos-1">Реализация модели с помощью блока Modelica в xcos</h2>
+<div class="figure">
+<img src="image/8.png" alt="Параметры блока Modelica для модели &quot;хищник–жертва&quot;" id="fig:008" style="width:50.0%" />
+<p class="caption">Параметры блока Modelica для модели &quot;хищник–жертва&quot;</p>
+</div>
+<h2 id="реализация-модели-с-помощью-блока-modelica-в-xcos-2">Реализация модели с помощью блока Modelica в xcos</h2>
+<div class="figure">
+<img src="image/9.png" alt="Параметры блока Modelica для модели &quot;хищник–жертва&quot;" id="fig:009" style="width:50.0%" />
+<p class="caption">Параметры блока Modelica для модели &quot;хищник–жертва&quot;</p>
+</div>
+<h2 id="реализация-модели-с-помощью-блока-modelica-в-xcos-3">Реализация модели с помощью блока Modelica в xcos</h2>
+<div class="figure">
+<img src="image/10.png" alt="Динамика изменения численности хищников и жертв модели Лотки-Вольтерры при a = 2, b = 1, c = 0.3, d = 1, x(0) = 2, y(0) = 1" id="fig:010" style="width:70.0%" />
+<p class="caption">Динамика изменения численности хищников и жертв модели Лотки-Вольтерры при <span class="math inline"><em>a</em> = 2, <em>b</em> = 1, <em>c</em> = 0.3, <em>d</em> = 1, <em>x</em>(0)=2, <em>y</em>(0)=1</span></p>
+</div>
+<h2 id="реализация-модели-с-помощью-блока-modelica-в-xcos-4">Реализация модели с помощью блока Modelica в xcos</h2>
+<div class="figure">
+<img src="image/11.png" alt="Фазовый портрет модели Лотки-Вольтерры при a = 2, b = 1, c = 0.3, d = 1, x(0) = 2, y(0) = 1" id="fig:011" style="width:70.0%" />
+<p class="caption">Фазовый портрет модели Лотки-Вольтерры при <span class="math inline"><em>a</em> = 2, <em>b</em> = 1, <em>c</em> = 0.3, <em>d</em> = 1, <em>x</em>(0)=2, <em>y</em>(0)=1</span></p>
+</div>
+<h2 id="упражнение">Упражнение</h2>
+<pre><code>  parameter Real a = 2;
+  parameter Real b = 1;
+  parameter Real c = 0.3;
+  parameter Real d = 1;
+  parameter Real x0 = 2;
+  parameter Real y0 = 1;
+  Real x(start=x0);
+  Real y(start=y0);
+equation
+    der(x) = a*x - b*x*y;
+    der(y) = c*x*y - d*y;</code></pre>
+<h2 id="упражнение-1">Упражнение</h2>
+<div class="figure">
+<img src="image/12.png" alt="Динамика изменения численности хищников и жертв модели Лотки-Вольтерры при a = 2, b = 1, c = 0.3, d = 1, x(0) = 2, y(0) = 1" id="fig:012" style="width:70.0%" />
+<p class="caption">Динамика изменения численности хищников и жертв модели Лотки-Вольтерры при <span class="math inline"><em>a</em> = 2, <em>b</em> = 1, <em>c</em> = 0.3, <em>d</em> = 1, <em>x</em>(0)=2, <em>y</em>(0)=1</span></p>
+</div>
+<h2 id="упражнение-2">Упражнение</h2>
+<div class="figure">
+<img src="image/13.png" alt="Фазовый портрет модели Лотки-Вольтерры при a = 2, b = 1, c = 0.3, d = 1, x(0) = 2, y(0) = 1" id="fig:013" style="width:70.0%" />
+<p class="caption">Фазовый портрет модели Лотки-Вольтерры при <span class="math inline"><em>a</em> = 2, <em>b</em> = 1, <em>c</em> = 0.3, <em>d</em> = 1, <em>x</em>(0)=2, <em>y</em>(0)=1</span></p>
+</div>
+<h2 id="выводы">Выводы</h2>
+<p>В процессе выполнения данной лабораторной реализована модель &quot;хищник-жертва&quot; в <em>xcos</em>.</p>
